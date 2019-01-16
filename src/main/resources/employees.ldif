@@ -1,0 +1,94 @@
+dn: dc=intuit,dc=com
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: intuit
+
+dn: ou=groups,dc=intuit,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn: ou=people,dc=intuit,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: uid=mike,ou=people,dc=intuit,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Mike
+sn: Clarke
+uid: mike
+userPassword: abc123
+
+dn: uid=smith,ou=people,dc=intuit,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Smith
+sn: Hus
+uid: smith
+userPassword: xyz12
+
+dn: uid=ben,ou=people,dc=intuit,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Ben
+sn: Wilson
+uid: ben
+userPassword: tttj12
+
+dn: uid=ashley,ou=people,dc=intuit,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Ashley
+sn: Thompson
+uid: ashley
+userPassword: kbc54
+
+
+dn: uid=frank,ou=people,dc=intuit,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Frank
+sn: Nixon
+uid: frank
+userPassword: uvw10
+
+dn: uid=sara,ou=people,dc=intuit,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Sara
+sn: King
+uid: sara
+userPassword: jkl90
+
+dn: cn=developers,ou=groups,dc=intuit,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: developers
+ou: developer
+uniqueMember: uid=mike,ou=people,dc=intuit,dc=com
+uniqueMember: uid=sara,ou=people,dc=intuit,dc=com
+uniqueMember: uid=smith,ou=people,dc=intuit,dc=com
+uniqueMember: uid=ben,ou=people,dc=intuit,dc=com
+
+dn: cn=managers,ou=groups,dc=intuit,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: managers
+ou: manager
+uniqueMember: uid=ashley,ou=people,dc=intuit,dc=com
+uniqueMember: uid=frank,ou=people,dc=intuit,dc=com
